@@ -19,9 +19,9 @@ public class carControler : MonoBehaviour
         if (hInput == -1)
             transform.Rotate(Vector3.up, -1 * rotSpeed * dt, 0);
         if (vInput == 1)
-            transform.Translate(maxSpeed*Vector3.left);
+            transform.Translate(dt * maxSpeed*Vector3.left);
         if (vInput == -1)
-            transform.Translate(maxSpeed * Vector3.right);
+            transform.Translate(dt * maxSpeed * Vector3.right);
 
     }
 }
